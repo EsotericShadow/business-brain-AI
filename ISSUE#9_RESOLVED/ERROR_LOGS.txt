@@ -1,0 +1,32 @@
+[GoogleGenerativeAI Error]: First content should be with role 'user', got undefined Failed to load resource: the server responded with a status of 500 (Internal Server Error)
+api.ts:23 API Error: 
+Object
+handleResponse@api.ts:23
+Workspace.tsx:144 Error fetching AI response: Error: Cannot read properties of undefined (reading 'length')
+    at handleResponse (api.ts:24:15)
+    at async Workspace.tsx:95:24
+(anonymous)@Workspace.tsx:144
+:5173/api/gmail/ai:1 
+ Failed to load resource: the server responded with a status of 500 (Internal Server Error)
+api.ts:23 API Error: 
+Object
+handleResponse@api.ts:23
+Workspace.tsx:144 Error fetching AI response: Error: [GoogleGenerativeAI Error]: First content should be with role 'user', got undefined
+    at handleResponse (api.ts:24:15)
+    at async Workspace.tsx:95:24
+(anonymous)@Workspace.tsx:144 ✅ Backend server running at http://localhost:8000
+Failed to process AI request: TypeError: Cannot read properties of undefined (reading 'length')
+    at AIGmailService.processUserRequest (file:///Users/main/Desktop/business-brain-ai-assistant 2/backend/src/services/ai-gmail.service.ts:28:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at file:///Users/main/Desktop/business-brain-ai-assistant 2/backend/src/routes/gmail.ts:46:30
+Failed to process AI request: GoogleGenerativeAIError: [GoogleGenerativeAI Error]: First content should be with role 'user', got undefined
+    at validateChatHistory (file:///Users/main/Desktop/business-brain-ai-assistant%202/backend/node_modules/@google/generative-ai/dist/index.mjs:1050:19)
+    at new ChatSession (file:///Users/main/Desktop/business-brain-ai-assistant%202/backend/node_modules/@google/generative-ai/dist/index.mjs:1147:13)
+    at GenerativeModel.startChat (file:///Users/main/Desktop/business-brain-ai-assistant%202/backend/node_modules/@google/generative-ai/dist/index.mjs:1399:16)
+    at AIGmailService.processUserRequest (file:///Users/main/Desktop/business-brain-ai-assistant 2/backend/src/services/ai-gmail.service.ts:25:29)
+    at file:///Users/main/Desktop/business-brain-ai-assistant 2/backend/src/routes/gmail.ts:46:51
+    at Layer.handle [as handle_request] (/Users/main/Desktop/business-brain-ai-assistant 2/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/main/Desktop/business-brain-ai-assistant 2/backend/node_modules/express/lib/router/route.js:149:13)
+    at verifyJwt (file:///Users/main/Desktop/business-brain-ai-assistant 2/backend/src/middleware/auth.ts:16:5)
+    at Layer.handle [as handle_request] (/Users/main/Desktop/business-brain-ai-assistant 2/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/main/Desktop/business-brain-ai-assistant 2/backend/node_modules/express/lib/router/route.js:149:13)

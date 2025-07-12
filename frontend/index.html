@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Brain AI Assistant</title>
+    <meta name="description" content="An AI-powered assistant to help automate your administrative tasks and streamline workflows by integrating with Google Workspace. Chat with the assistant to manage files, analyze data, handle emails, schedule events, and more." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                '50': '#f0f7ff',
+                '100': '#e0eefe',
+                '200': '#c8e0fe',
+                '300': '#a2c9fd',
+                '400': '#72a9fc',
+                '500': '#5286fa',
+                '600': '#3b6cf1',
+                '700': '#3158e3',
+                '800': '#2b49b9',
+                '900': '#284192',
+                '950': '#1b2a54',
+              },
+            },
+            keyframes: {
+              'toast-in': {
+                '0%': { transform: 'translateY(100%)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+            },
+            animation: {
+              'toast-in': 'toast-in 0.5s ease-out forwards',
+            },
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>

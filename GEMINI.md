@@ -1,0 +1,1 @@
+Read every file in @/DOCUMENTATION and follow in sequence.

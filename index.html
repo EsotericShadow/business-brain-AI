@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Brain AI Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                '50': '#f0f7ff',
+                '100': '#e0eefe',
+                '200': '#c8e0fe',
+                '300': '#a2c9fd',
+                '400': '#72a9fc',
+                '500': '#5286fa',
+                '600': '#3b6cf1',
+                '700': '#3158e3',
+                '800': '#2b49b9',
+                '900': '#284192',
+                '950': '#1b2a54',
+              },
+            },
+            keyframes: {
+              'toast-in': {
+                '0%': { transform: 'translateY(100%)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+            },
+            animation: {
+              'toast-in': 'toast-in 0.5s ease-out forwards',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.8.0",
+    "zod": "https://esm.sh/zod@3.23.8",
+    "dompurify": "https://esm.sh/dompurify@3.1.5",
+    "express": "https://esm.sh/express@^5.1.0",
+    "jsonwebtoken": "https://esm.sh/jsonwebtoken@^9.0.2",
+    "crypto": "https://esm.sh/crypto@^1.0.1",
+    "google-auth-library": "https://esm.sh/google-auth-library@^10.1.0",
+    "cors": "https://esm.sh/cors@^2.8.5",
+    "cookie-parser": "https://esm.sh/cookie-parser@^1.4.7",
+    "helmet": "https://esm.sh/helmet@^8.1.0",
+    "dotenv": "https://esm.sh/dotenv@^17.1.0",
+    "vite": "https://esm.sh/vite@^7.0.3",
+    "@vitejs/plugin-react-swc": "https://esm.sh/@vitejs/plugin-react-swc@^4.6.0",
+    "path": "https://esm.sh/path@^0.12.7",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.3",
+    "stripe": "https://esm.sh/stripe@^18.3.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

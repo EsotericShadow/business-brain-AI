@@ -1,0 +1,29 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id                 String    @id // Google 'sub'
+  email              String    @unique
+  name               String?
+  avatarUrl          String?   @map("avatar_url")
+  
+  gmailAccessToken   String?   @map("gmail_access_token")
+  gmailRefreshToken  String?   @map("gmail_refresh_token")
+
+  stripeCustomerId   String?   @unique @map("stripe_customer_id")
+  planId             String    @default("free") @map("plan_id")
+  tokenBalance       Int       @default(500) @map("token_balance")
+  trialEndsAt        DateTime? @map("trial_ends_at")
+  
+  createdAt          DateTime  @default(now()) @map("created_at")
+  updatedAt          DateTime  @updatedAt @map("updated_at")
+}
